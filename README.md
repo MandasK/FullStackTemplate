@@ -8,3 +8,13 @@ Templates Pages Starter Code and set up Readme for building a Full Stack app wit
 1. Create Web API project in Visual Studio
 1. Create [.gitignore](https://github.com/MandasK/FullStackTemplate/blob/main/.gitignore)
 1. Run `git init` from the root of your project
+1. Add Nuget Packages `Microsoft.Data.SqlClient` and `Microsoft.AspNetCore.Authentication.JwtBearer` to connect SQL DB and Firebase Authentication.
+    **NOTE:** Check to be sure your dependency version matches the ASP.NET core version your using.
+1. Navigate to `Project > Debug > `. In `Environemnt Variables` update the `ASPNETCORE_ENVIRONMENT` Value to `Local`	
+1. Inside of `Project > Debug > ` update App URL to `https://localhost:5001;http://localhost:5000`
+
+## Setup SQL Server
+1. Create a `SQL` folder in the root of your project
+1. Add a SQL script called `01_Db_Create.sql` that creates your database (start by either copying and modifying Script or generate one from DBDiagram)
+1. (Optional) Add a SQL script called  `02_Seed_Data.sql` to insert seed data records into your database tables. **Note** You could also add the seed data in the first script if you prefer
+1. Run the script(s) to create and seed your database.
