@@ -36,3 +36,15 @@ Templates Pages Starter Code and set up Readme for building a Full Stack app wit
 1. Copy in the `UserProfileRepository` and `UserProfileController` from Template and modify as needed
 
 > **NOTE:** Make sure to update the `namespace` of any classes you copy/paste from another project.
+
+## Client Side
+
+1. Create client directory and run `npx create-react-app .`
+1. Setup proxy in `package.json` see line 2 in package.json Template
+1. Install firebase and react router using `npm install react-router-dom firebase`
+1. Install whatever component library you want( `npm install --save react-helmet` for dynamic title change or `npm install --save reactstrap react react-dom` for reactstrap--see index.html and index.js for add ins)
+1. Create a `.env.local` file in your `client` folder (DON'T forget the leading `.`) and add the firebase API Key
+1. Update the `index.js` file to add the call to `firebase.initializeApp`
+1. Copy in `UserProfileProvider.js`, `Login.js`, `Register.js` from Template
+1. Copy in `ApplicationViews.js` and `Header.js` from Template
+1. Modify `App.js` to use the `Router`, `UserProfileProvider`, `Header.js`, and `ApplicationViews` components
