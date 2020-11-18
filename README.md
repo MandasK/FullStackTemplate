@@ -15,6 +15,13 @@ Templates Pages Starter Code and set up Readme for building a Full Stack app wit
 
 ## Setup SQL Server
 1. Create a `SQL` folder in the root of your project
-1. Add a SQL script called `01_Db_Create.sql` that creates your database (start by either copying and modifying Script or generate one from DBDiagram)
+1. Add a SQL script called `01_Db_Create.sql` that creates your database (start by either copying and modifying [Script](https://github.com/MandasK/FullStackTemplate/blob/main/01_Db_Create.sql) or generate one from [DBDiagram](https://dbdiagram.io/))
 1. (Optional) Add a SQL script called  `02_Seed_Data.sql` to insert seed data records into your database tables. **Note** You could also add the seed data in the first script if you prefer
 1. Run the script(s) to create and seed your database.
+
+## Set up Firebase
+
+1. Go to Firebase console and create a new project
+1. Enable a "Sign-in method"
+    > **NOTE:** In the course we used the `Email/Password` sign-in method.
+1. Go to project settings to view API Key and Project ID (you'll need these in future steps)
