@@ -16,7 +16,7 @@ Templates Pages Starter Code and set up Readme for building a Full Stack app wit
 ## Setup SQL Server
 1. Create a `SQL` folder in the root of your project
 1. Add a SQL script called `01_Db_Create.sql` that creates your database (start by either copying and modifying [Script](https://github.com/MandasK/FullStackTemplate/blob/main/01_Db_Create.sql) or generate one from [DBDiagram](https://dbdiagram.io/))
-1. (Optional) Add a SQL script called  `02_Seed_Data.sql` to insert seed data records into your database tables. **Note** You could also add the seed data in the first script if you prefer
+1. (Optional) Add a SQL script called  `02_Seed_Data.sql` to insert [seed data records](https://github.com/MandasK/FullStackTemplate/blob/main/02_Seed_Data.sql) into your database tables. **Note** You could also add the seed data in the first script if you prefer
 1. Run the script(s) to create and seed your database.
 
 ## Set up Firebase
@@ -25,3 +25,14 @@ Templates Pages Starter Code and set up Readme for building a Full Stack app wit
 1. Enable a "Sign-in method"
     > **NOTE:** In the course we used the `Email/Password` sign-in method.
 1. Go to project settings to view API Key and Project ID (you'll need these in future steps)
+
+## Server Side
+
+1. Rename `appsettings.Development.json` to `appsettings.Local.json
+1. Review contents in [Template]() appsettings.json and appsettings.Development.json files to make sure you have correct
+1. Create Models by adding `Models` folder at sln level and then add new class for each model needed see `Models > UserProfile` as reference
+1. Update `Startup.cs` to handle JWTs review Startup.cs file in templates for accuracy
+1. copy in DBUtils file from Template
+1. Copy in the `UserProfileRepository` and `UserProfileController` from Template and modify as needed
+
+> **NOTE:** Make sure to update the `namespace` of any classes you copy/paste from another project.
